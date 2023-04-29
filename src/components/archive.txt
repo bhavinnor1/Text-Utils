@@ -1,0 +1,87 @@
+import React, { Component } from "react";
+
+class NavBar extends Component {
+  state = {};
+  render() {
+    return (
+      <div className="nav">
+        <span>{this.props.title}</span>
+        <span className="navlinks">
+          <a href="/">Home</a>
+          <a href="/">About</a>
+        </span>
+        <span>
+          <form
+            action="/"
+            style={({ display: "inline-block" }, { float: "right" })}
+          >
+            <input
+              className="input"
+              type="text"
+              placeholder="Search Features..."
+            />
+            <button className="btn" type="submit">
+              Search
+            </button>
+          </form>
+        </span>
+      </div>
+    );
+  }
+}
+
+export default NavBar;
+
+
+import React from "react";
+
+function TextForm(props) {
+  return (
+    <>
+      <div className="container">
+        {/* <h2>Text to UpperCase Coverter</h2> */}
+        <h2>{props.heading}</h2>
+        <textarea
+          placeholder="Put Text Here!"
+          value={props.text}
+          onChange={props.onChange}
+          rows={8}
+          cols={30}
+        ></textarea>
+        <button onClick={props.onUpper} className="btn mx-5">
+          UPPERCASE
+        </button>
+        <button onClick={props.onLower} className="btn mx-5">
+          lowercase
+        </button>
+        <button onClick={props.onUndo} className="btn mx-5">
+          Undo
+        </button>
+        <button onClick={props.onRedo} className="btn mx-5">
+          Redo
+        </button>
+        <button onClick={props.onClear} className="btn mx-5">
+          Clear Text
+        </button>
+        <button onClick={props.onCopy} className="btn mx-5">
+          Copy to ClipBoard
+        </button>
+      </div>
+      <div className="container">
+        <h2>Your Text Summary</h2>
+        <p>
+          <b>{props.text.trim().split(" ").length} words</b> and{" "}
+          <b>{props.text.trim().length} characters</b>
+        </p>
+        <p>
+          <b>{props.text.trim().split(" ").length * 0.008} minutes</b> to read
+          this Text.
+        </p>
+        <h2>Preview</h2>
+        <p>{props.text}</p>
+      </div>
+    </>
+  );
+}
+
+export default TextForm;

@@ -1,0 +1,112 @@
+/* .nav {
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: antiquewhite;
+} */
+
+.lavender,
+.green,
+.gray {
+  border: 0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+.lavender {
+  /* position: relative;
+  top: 1px; */
+  background: #7a7fea;
+}
+
+.green {
+  background-color: green;
+}
+
+.gray {
+  background-color: gray;
+}
+
+/* 
+.navlinks {
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.navlinks>* {
+  padding: 5px 10px;
+
+  text-decoration: none;
+  color: rgb(80, 80, 255);
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: rgb(255, 201, 130);
+}
+
+form {
+  display: "inline-block";
+  float: "right";
+}
+
+form>* {
+  margin: 0px 5px;
+}
+
+.input {
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  background-color: rgb(255, 217, 167);
+  border-radius: 5px;
+  border: 0;
+  transition: 0.2s;
+  outline: 2px solid antiquewhite !important;
+}
+
+input:focus {
+  outline: 2px solid rgb(255, 180, 81) !important;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.btn {
+  font-family: "Courier New", Courier, monospace;
+  color: aliceblue;
+  padding: 10px;
+
+  background-color: green;
+  border-radius: 5px;
+  border: 0;
+}
+
+.btn:focus {
+  outline: 3px solid rgb(81, 214, 81);
+}
+
+.mx-5 {
+  margin: 5px;
+}
+
+.container form {
+  margin: 0;
+}
+
+.container {
+  margin: 10px auto;
+  width: 60%;
+}
+
+textarea {
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0;
+  font-size: 20px;
+} */
