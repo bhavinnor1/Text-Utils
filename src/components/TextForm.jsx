@@ -21,7 +21,7 @@ function TextForm(props) {
               <i class="bi bi-linkedin"></i>
             </a>
             <a class="icon-link mx-10" style={{ margin: "0 5px 0 0" }} href="https://github.com/bhavinnor1" target="_blank">
-              <i class="bi bi-github" style={{ color: "black" }}></i>
+              <i class="bi bi-github" style={{ color: `${props.mode == "light" ? "black" : "white"}` }}></i>
             </a>
             <a class="icon-link mx-10" style={{ margin: "0 5px 0 0" }} href="https://www.youtube.com/@codegeassprogramming" target="_blank">
               <i class="bi bi-youtube" style={{ color: "red" }}></i>
