@@ -11,7 +11,9 @@ import {
 import Alert from "./components/Alert";
 import About from "./components/About";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
+
+import "bootstrap-icons/font/bootstrap-icons.css";
+// import "bootstrap/dist/js/bootstrap.min.js";
 import RBNavBar from "./components/RBNavBar";
 
 function App() {

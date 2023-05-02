@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 function RBNavBar(props) {
     return (
         <Navbar style={{
-            backgroundColor: props.mode == "light" ? "white" : `${(document.body.style.backgroundColor.slice(0, -4).toString() + " " + (parseInt(document.body.style.backgroundColor.slice(-4, -1)) + 65).toString() + ")").toString()
-                }`
+            backgroundColor: props.mode == "light" ? "white" : `${(document.body.style.backgroundColor.slice(0, -4).toString() + " " + (parseInt(document.body.style.backgroundColor.slice(-4, -1)) + 35).toString() + ")").toString()
+                }`, boxShadow: `${props.mode == "light" ? "0 0 0" : "0px 0px 125px black"}`
         }}
             className={`navbar navbar-expand-lg navbar-${props.mode == "light" ? "light" : "dark"} ${props.mode == "light" ? "bg-light" : ""}`}
             expand="lg">

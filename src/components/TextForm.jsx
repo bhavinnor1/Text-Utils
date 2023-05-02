@@ -11,17 +11,27 @@ function TextForm(props) {
         }}
       >
         {/* <h2>Text to UpperCase Coverter</h2> */}
-        <div className="h2">
+        <div className="h2 mt-20 mb-10">
           <strong>{props.heading}</strong>
         </div>
         <div className="mb-3">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">
-            Example textarea
+            developed by :- Bhavin Nor
+            <a class="icon-link" style={{ margin: "0 5px" }} href="https://www.linkedin.com/in/bhavin-nor/" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a class="icon-link mx-10" style={{ margin: "0 5px 0 0" }} href="https://github.com/bhavinnor1" target="_blank">
+              <i class="bi bi-github" style={{ color: "black" }}></i>
+            </a>
+            <a class="icon-link mx-10" style={{ margin: "0 5px 0 0" }} href="https://www.youtube.com/@codegeassprogramming" target="_blank">
+              <i class="bi bi-youtube" style={{ color: "red" }}></i>
+            </a>
           </label>
           <textarea
             style={{
-              backgroundColor: props.mode === "light" ? "white" : "inherit",
+              backgroundColor: props.mode === "light" ? "white" : "rgba(255,255,255,0.43)",
               color: props.mode === "light" ? "black" : "white",
+              borderColor: props.mode === "light" ? "inherit" : "white",
             }}
             placeholder="Put Text Here!"
             value={props.text}
