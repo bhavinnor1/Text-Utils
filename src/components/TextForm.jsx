@@ -39,22 +39,22 @@ function TextForm(props) {
           rows={8}
           cols={30}
         ></textarea> */}
-        <button onClick={props.onUpper} className="btn btn-primary mx-1">
+        <button onClick={props.onUpper} className="btn btn-primary mx-1 mb-2">
           UPPERCASE
         </button>
-        <button onClick={props.onLower} className="btn btn-primary mx-1">
+        <button onClick={props.onLower} className="btn btn-primary mx-1 mb-2">
           lowercase
         </button>
-        <button onClick={props.onUndo} className="btn btn-primary mx-1">
+        <button onClick={props.onUndo} className="btn btn-primary mx-1 mb-2">
           Undo
         </button>
-        <button onClick={props.onRedo} className="btn btn-primary mx-1">
+        <button onClick={props.onRedo} className="btn btn-primary mx-1 mb-2">
           Redo
         </button>
-        <button onClick={props.onClear} className="btn btn-primary mx-1">
+        <button onClick={props.onClear} className="btn btn-primary mx-1 mb-2">
           Clear Text
         </button>
-        <button onClick={props.onCopy} className="btn btn-primary mx-1">
+        <button onClick={props.onCopy} className="btn btn-primary mx-1 mb-2">
           Copy to ClipBoard
         </button>
       </div>

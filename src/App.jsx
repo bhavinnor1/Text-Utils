@@ -10,7 +10,9 @@ import {
 } from "react-router-dom";
 import Alert from "./components/Alert";
 import About from "./components/About";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import RBNavBar from "./components/RBNavBar";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -214,8 +216,10 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar title="TextUtils" mode={mode} toggleMode={toggleMode} lavenderMode={lavenderMode} greenMode={greenMode} grayMode={grayMode} />
+        {/* <NavBar title="TextUtils" mode={mode} toggleMode={toggleMode} lavenderMode={lavenderMode} greenMode={greenMode} grayMode={grayMode} /> */}
+        <RBNavBar title="TextUtils" mode={mode} toggleMode={toggleMode} lavenderMode={lavenderMode} greenMode={greenMode} grayMode={grayMode} />
         <br />
+
         <Alert msg={message} type={msgType} />
         <Routes>
           <Route path='/' element={<TextForm
