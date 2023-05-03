@@ -220,9 +220,10 @@ function App() {
       <BrowserRouter>
         {/* <NavBar title="TextUtils" mode={mode} toggleMode={toggleMode} lavenderMode={lavenderMode} greenMode={greenMode} grayMode={grayMode} /> */}
         <RBNavBar title="TextUtils" mode={mode} toggleMode={toggleMode} lavenderMode={lavenderMode} greenMode={greenMode} grayMode={grayMode} />
-        <br />
-
-        <Alert msg={message} type={msgType} />
+        {/* <br /> */}
+        <div style={{ height: "60px", marginTop: "10px" }}>
+          <Alert msg={message} type={msgType} />
+        </div>
         <Routes>
           <Route path='/' element={<TextForm
             heading="Enter your text to analyze"
