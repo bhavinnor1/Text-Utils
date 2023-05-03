@@ -36,7 +36,6 @@ function NavBar(props) {
               </NavLink>
             </li>
           </ul>
-          {/* <div className="nav-item" style={{ float: "right" }}> */}
           <button onClick={props.lavenderMode} className="lavender"></button>
           <button onClick={props.greenMode} className="green"></button>
           <button onClick={props.grayMode} className="gray"></button>
@@ -56,10 +55,7 @@ function NavBar(props) {
               Enable {`${props.mode === "light" ? "Dark" : "Light"}`} Mode
             </label>
           </div>
-          {/* </div> */}
         </div>
-
-
       </div>
     </nav>
   );

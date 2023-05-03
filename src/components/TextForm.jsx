@@ -10,21 +10,20 @@ function TextForm(props) {
           color: props.mode === "light" ? "black" : "white",
         }}
       >
-        {/* <h2>Text to UpperCase Coverter</h2> */}
         <div className="h2 mt-20 mb-10">
           <strong>{props.heading}</strong>
         </div>
         <div className="mb-3">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">
             developed by :- Bhavin Nor
-            <a class="icon-link" style={{ margin: "0 5px" }} href="https://www.linkedin.com/in/bhavin-nor/" target="_blank">
-              <i class="bi bi-linkedin"></i>
+            <a className="icon-link" style={{ margin: "0 5px" }} href="https://www.linkedin.com/in/bhavin-nor/" target="_blank">
+              <i className="bi bi-linkedin"></i>
             </a>
-            <a class="icon-link mx-10" style={{ margin: "0 5px 0 0" }} href="https://github.com/bhavinnor1" target="_blank">
-              <i class="bi bi-github" style={{ color: `${props.mode == "light" ? "black" : "white"}` }}></i>
+            <a className="icon-link mx-10" style={{ margin: "0 5px 0 0" }} href="https://github.com/bhavinnor1" target="_blank">
+              <i className="bi bi-github" style={{ color: `${props.mode == "light" ? "black" : "white"}` }}></i>
             </a>
-            <a class="icon-link mx-10" style={{ margin: "0 5px 0 0" }} href="https://www.youtube.com/@codegeassprogramming" target="_blank">
-              <i class="bi bi-youtube" style={{ color: "red" }}></i>
+            <a className="icon-link mx-10" style={{ margin: "0 5px 0 0" }} href="https://www.youtube.com/@codegeassprogramming" target="_blank">
+              <i className="bi bi-youtube" style={{ color: "red" }}></i>
             </a>
           </label>
           <textarea
@@ -42,13 +41,6 @@ function TextForm(props) {
             id="exampleFormControlTextarea1"
           ></textarea>
         </div>
-        {/* <textarea
-          placeholder="Put Text Here!"
-          value={props.text}
-          onChange={props.onChange}
-          rows={8}
-          cols={30}
-        ></textarea> */}
         <button onClick={props.onUpper} className="btn btn-primary mx-1 mb-2">
           UPPERCASE
         </button>
@@ -79,11 +71,12 @@ function TextForm(props) {
           <strong>Your Text Summary</strong>
         </h2>
         <p>
-          <b>{props.text.trim() == "" ? 0 : props.text.trim().split(" ").filter(a => { return a !== '' }).length} words</b> and{" "}
+          <b>{props.text.trim() == "" ? 0 : props.text.trim().replace(/\n/g, " ").split(" ").filter(a => { return a !== '' }).length} words</b> and{" "}
           <b>{props.text.trim().length} characters</b>
         </p>
         <p>
-          <b>{props.text.trim().split(" ").filter(a => { return a !== '' }).length * 0.008} minutes</b> to read
+          {/* <strong>{console.log(props.text.replace(/\n/g, " ").split(" ").filter(a => { return a !== '' }))}</strong> */}
+          <b>{props.text.replace(/\n/g, " ").split(" ").filter(a => { return a !== '' }).length * 0.008} minutes</b> to read
           this Text.
         </p>
         <h2>
