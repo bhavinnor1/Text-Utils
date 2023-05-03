@@ -12,7 +12,7 @@ function RBNavBar(props) {
             className={`navbar navbar-expand-lg navbar-${props.mode == "light" ? "light" : "dark"} ${props.mode == "light" ? "bg-light" : ""}`}
             expand="lg">
             <Container>
-                <Navbar.Brand href="#home">{props.title}</Navbar.Brand>
+                <NavLink className="navbar-brand" href="/">{props.title}</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
